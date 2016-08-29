@@ -1,0 +1,11 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[options]
+# src/[...] -> <PROJECT_ROOT>/src/[...]
+module.name_mapper='^src\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+esproposal.class_static_fields=enable
+unsafe.enable_getters_and_setters=true

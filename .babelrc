@@ -1,0 +1,15 @@
+{
+    "presets": ["babel-preset-es2015","babel-preset-stage-0"],
+    "plugins": [
+        "transform-react-jsx",
+        "transform-flow-strip-types",
+        "transform-class-properties",
+        "transform-runtime",
+        "transform-async-functions",
+        "transform-object-rest-spread",
+        "transform-regenerator",
+        ["module-alias", [
+          { "src": "./src/", "expose": "src" }
+        ]]
+    ]
+}
