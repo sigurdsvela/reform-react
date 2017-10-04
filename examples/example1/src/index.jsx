@@ -10,7 +10,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-              <Form onChange={saveToState(this)} onClick={alert('You clicked mah button!')} >
+              <Form onChange={saveToState(this)} onClick={(name, form) => name === «myButton» ? alert(«You clicked mah button»)} >
                   <TextInput
                       name="text1"
                       value={this.state.text1.value}
